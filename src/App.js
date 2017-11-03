@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import incidentes from './components/incidentes'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <nav>
-            <ul>
+          <nav ul="menuNav">
+            <ul className="menuUl">
               <li>Incidentes</li>
               <li>It Service request</li>
               <li>Problemas</li>
             </ul>
+
+            {/* Esto tiene q ser variable según la ruta- incidentes - it service request - problemas */}
+            <incidentes />
+
           </nav>
         </header>
 
