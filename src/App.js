@@ -4,33 +4,17 @@ import incidentes from './components/incidentes';
 
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { RaisedButton } from 'material-ui';
+import Navbar from './components/navbar'
 
 class App extends Component {
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <nav ul="menuNav">
-            <ul className="menuUl">
-              <li>Incidentes</li>
-              <li>It Service request</li>
-              <li>Problemas</li>
-            </ul>
-
-
-
-
-            {/* Esto tiene q ser variable según la ruta- incidentes - it service request - problemas
-            <incidentes /> */}
-
-          </nav>
-        </header>
-
-        <MuiThemeProvider>
-          <h1>hola</h1>
+        <MuiThemeProvider >
+          <Navbar />
         </MuiThemeProvider>
-
       </div>
     );
   }
