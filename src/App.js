@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import incidentes from './components/incidentes';
-
+import ListView from './components/listview';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -26,10 +26,6 @@ class App extends Component {
 
           </nav>
         </header>
-
-        <MuiThemeProvider>
-          <h1>hola</h1>
-        </MuiThemeProvider>
 
       </div>
     );
