@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import incidentes from './components/incidentes'
+import incidentes from './components/incidentes';
+
+import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
@@ -15,11 +18,18 @@ class App extends Component {
               <li>Problemas</li>
             </ul>
 
-            {/* Esto tiene q ser variable según la ruta- incidentes - it service request - problemas */}
-            <incidentes />
+
+
+
+            {/* Esto tiene q ser variable según la ruta- incidentes - it service request - problemas
+            <incidentes /> */}
 
           </nav>
         </header>
+
+        <MuiThemeProvider>
+          <h1>hola</h1>
+        </MuiThemeProvider>
 
       </div>
     );
