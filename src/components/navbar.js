@@ -4,6 +4,7 @@ import { BottomNavigation, BottomNavigationItem } from 'material-ui/BottomNaviga
 import Paper from 'material-ui/Paper';
 import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 import '../styles/styles.css'
+import { Divider } from 'material-ui/Divider';
 const inc = <FontIcon className="material-icons">Inc</FontIcon>;
 const pro = <FontIcon className="material-icons">Pro</FontIcon>;
 const itSR = <FontIcon className="material-icons">SR</FontIcon>;
@@ -22,25 +23,25 @@ class BottomNavigationExampleSimple extends Component {
 
     render() {
         return (
-            <Paper zDepth={1} c>
-                <BottomNavigation selectedIndex={this.state.selectedIndex} className="navBar">
-                    <BottomNavigationItem
-                        label="Incidentes"
-                        icon={inc}
-                        onClick={() => this.select(0)}
-                    />
-                    <BottomNavigationItem
-                        label="Problemas"
-                        icon={pro}
-                        onClick={() => this.select(1)}
-                    />
-                    <BottomNavigationItem
-                        label="It service Request"
-                        icon={itSR}
-                        onClick={() => this.select(2)}
-                    />
-                </BottomNavigation>
-            </Paper>
+                <Paper zDepth={1} c>
+                    <BottomNavigation selectedIndex={this.state.selectedIndex} className="navBar">
+                        <BottomNavigationItem
+                            label="Incidentes"
+                            icon={inc}
+                            onClick={() => this.select(0)}
+                        />
+                        <BottomNavigationItem
+                            label="Problemas"
+                            icon={pro}
+                            onClick={() => this.select(1)}
+                        />
+                        <BottomNavigationItem
+                            label="It service Request"
+                            icon={itSR}
+                            onClick={() => this.select(2)}
+                        />
+                    </BottomNavigation>
+                </Paper>
         );
     }
 }
