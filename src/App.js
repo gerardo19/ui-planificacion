@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import incidentes from './components/incidentes';
+import Incidentes from './components/incidentes';
 import ListView from './components/listview';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <MuiThemeProvider >
           <Navbar />
-          <ListView />
+          <Incidentes />
         </MuiThemeProvider>
       </div>
     );
