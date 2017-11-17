@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ListView from './components/listview';
 import ReactDOM from 'react-dom';
 import Incidentes from './components/incidentes';
-
+import Problemas from './components/problemas';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { RaisedButton } from 'material-ui';
 import Navbar from './components/navbar'
@@ -16,6 +16,7 @@ export default class App extends Component {
         <MuiThemeProvider >
           <Navbar />
           <Incidentes />
+          {/* <Problemas /> */}
         </MuiThemeProvider>
 
       </div>
