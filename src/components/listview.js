@@ -8,8 +8,14 @@ import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
+import RaisedButton from 'material-ui/RaisedButton';
+
+const style = {
+    margin: 12,
+  };
 
 export default class Navbar extends React.Component {
+    
 
     render() {
         return (
@@ -66,6 +72,7 @@ export default class Navbar extends React.Component {
                         secondaryTextLines={2}
                     />
                 </List>
+                <RaisedButton label="Primary" primary={true} style={style} />
             </div>
         );
     }
