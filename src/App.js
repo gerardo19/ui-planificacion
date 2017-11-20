@@ -15,8 +15,8 @@ export default class App extends Component {
       <div className="App">
         <MuiThemeProvider >
           <Navbar />
-          <Incidentes />
-          {/* <Problemas /> */}
+          {/* <Incidentes /> */}
+          <Problemas />
         </MuiThemeProvider>
 
       </div>

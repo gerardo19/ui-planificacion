@@ -28,7 +28,7 @@ export default class FormProblemas extends Component {
     return (
       <div>
         <form>
-          <label>Numero Problema # </label>
+          <label>Problema número: 10 </label>
           <div id="divPrioridad">
             <SelectField
               floatingLabelText="Prioridad"
@@ -77,7 +77,7 @@ export default class FormProblemas extends Component {
           </div>  
           <div id="divAsignacion">
             <TextField
-              hintText="Asignado"
+              hintText="Asignado a:"
             />
           </div>
         </form> 
