@@ -9,13 +9,7 @@ const inc = <FontIcon className="material-icons">Inc</FontIcon>;
 const pro = <FontIcon className="material-icons">Pro</FontIcon>;
 const itSR = <FontIcon className="material-icons">SR</FontIcon>;
 
-/**
- * A simple example of `BottomNavigation`, with three labels and icons
- * provided. The selected `BottomNavigationItem` is determined by application
- * state (for instance, by the URL).
- */
 class BottomNavigationExampleSimple extends Component {
-
     constructor(props) {
         super(props);
     }
@@ -33,11 +27,6 @@ class BottomNavigationExampleSimple extends Component {
                         label="Problemas"
                         icon={pro}
                         onClick={() => this.props.select(1)}
-                    />
-                    <BottomNavigationItem
-                        label="It service Request"
-                        icon={itSR}
-                        onClick={() => this.props.select(2)}
                     />
                 </BottomNavigation>
             </Paper>
