@@ -10,15 +10,38 @@ import './App.css';
 
 export default class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedIndex: 0,
+      component: <Incidentes />
+    }
+  }
+
+  select = (index) => {
+    this.setState({ selectedIndex: index })
+    switch (index) {
+      case 0:
+        this.setState({ component: <Incidentes /> })
+        break;
+      case 1:
+        this.setState({ component: <Problemas /> })
+        break;
+      case 2:
+        this.setState({ component: <Problemas /> })
+        break;
+    }
+  }
+
   render() {
     return (
       <div className="App">
         <MuiThemeProvider >
-          <Navbar />
-          {/* <Incidentes /> */}
-          <Problemas />
+          <Navbar select={this.select} selectedIndex={this.state.selectedIndex} />
         </MuiThemeProvider>
-
+        <MuiThemeProvider >
+          {this.state.component}
+        </MuiThemeProvider>
       </div>
     );
   }

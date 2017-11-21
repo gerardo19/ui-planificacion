@@ -15,33 +15,32 @@ const itSR = <FontIcon className="material-icons">SR</FontIcon>;
  * state (for instance, by the URL).
  */
 class BottomNavigationExampleSimple extends Component {
-    state = {
-        selectedIndex: 0,
-    };
 
-    select = (index) => this.setState({ selectedIndex: index });
+    constructor(props) {
+        super(props);
+    }
 
     render() {
         return (
-                <Paper zDepth={1} c>
-                    <BottomNavigation selectedIndex={this.state.selectedIndex} className="navBar">
-                        <BottomNavigationItem
-                            label="Incidentes"
-                            icon={inc}
-                            onClick={() => this.select(0)}
-                        />
-                        <BottomNavigationItem
-                            label="Problemas"
-                            icon={pro}
-                            onClick={() => this.select(1)}
-                        />
-                        <BottomNavigationItem
-                            label="It service Request"
-                            icon={itSR}
-                            onClick={() => this.select(2)}
-                        />
-                    </BottomNavigation>
-                </Paper>
+            <Paper zDepth={1} >
+                <BottomNavigation selectedIndex={this.props.selectedIndex} className="navBar">
+                    <BottomNavigationItem
+                        label="Incidentes"
+                        icon={inc}
+                        onClick={() => this.props.select(0)}
+                    />
+                    <BottomNavigationItem
+                        label="Problemas"
+                        icon={pro}
+                        onClick={() => this.props.select(1)}
+                    />
+                    <BottomNavigationItem
+                        label="It service Request"
+                        icon={itSR}
+                        onClick={() => this.props.select(2)}
+                    />
+                </BottomNavigation>
+            </Paper>
         );
     }
 }
