@@ -12,67 +12,58 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 const style = {
     margin: 12,
-  };
+};
 
 export default class Navbar extends React.Component {
-    
+
+    constructor(props){
+        super(props);
+    }
 
     render() {
         return (
             <div>
                 <List>
-                    <Subheader>Hoy</Subheader>
+                    <Subheader>{this.props.title}</Subheader>
                     <ListItem
-                        leftAvatar={<Avatar src="https://tinyclipart.com/resource/man/man-1.jpg" />}
-                        primaryText="Brunch this weekend?"
+                        leftAvatar={<Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTFStUhVn8GF9cF-uBc7UiJFoFgBKr4M-1ALPB-jPbFPha-zn" />}
+                        primaryText="Lorem ipsum dolor sit amet"
                         secondaryText={
-                            <p>
-                                <span style={{ color: darkBlack }}>Brendan Lim</span> --
-                  I&apos;ll be in your neighborhood doing errands this weekend. Do you want to grab brunch?
-                </p>
+                            <p> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         }
                         secondaryTextLines={2}
                     />
                     <Divider inset={true} />
                     <ListItem
-                        leftAvatar={<Avatar src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dunn_Official_Headshot.jpg/220px-Dunn_Official_Headshot.jpg" />}
+                        leftAvatar={<Avatar src="https://previews.123rf.com/images/mindscanner/mindscanner1511/mindscanner151100017/48207595-Wordcloud-con-etiquetas-de-Manejo-de-Incidentes-Foto-de-archivo.jpg" />}
                         primaryText={
-                            <p>Summer BBQ&nbsp;&nbsp;<span style={{ color: lightBlack }}>4</span></p>
+                            <p>Lorem ipsum dolor sit amet</p>
                         }
                         secondaryText={
-                            <p>
-                                <span style={{ color: darkBlack }}>to me, Scott, Jennifer</span> --
-                  Wish I could come, but I&apos;m out of town this weekend.
-                </p>
+                            <p> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         }
                         secondaryTextLines={2}
                     />
                     <Divider inset={true} />
                     <ListItem
-                        leftAvatar={<Avatar src="http://www.alstoncomputerservices.com/wp-content/uploads/2013/10/smiling-woman.jpg" />}
-                        primaryText="Oui oui"
+                        leftAvatar={<Avatar src="http://arandasoft.com/wp-content/uploads/2016/09/service-desk-mucho-mas-que-soporte-a-usuarios-y-solucion-de-incidentes.png" />}
+                        primaryText="Lorem ipsum dolor sit amet"
                         secondaryText={
-                            <p>
-                                <span style={{ color: darkBlack }}>Grace Ng</span> --
-                  Do you have Paris recommendations? Have you ever been?
-                </p>
+                            <p> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         }
                         secondaryTextLines={2}
                     />
                     <Divider inset={true} />
                     <ListItem
-                        leftAvatar={<Avatar src="https://i.pinimg.com/originals/28/29/94/2829941260500a1cd3bdd5127876c271.jpg" />}
-                        primaryText="Birdthday gift"
+                        leftAvatar={<Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgLCeQ1CIMpdw6HfsiRLHtj_fmjPwj1KtHT_BpqBddDSLly8C-" />}
+                        primaryText="Lorem ipsum dolor sit amet"
                         secondaryText={
-                            <p>
-                                <span style={{ color: darkBlack }}>Kerem Suer</span> --
-                  Do you have any ideas what we can get Heidi for her birthday? How about a pony?
-                </p>
+                            <p> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         }
                         secondaryTextLines={2}
                     />
                 </List>
-                <RaisedButton label="Primary" primary={true} style={style} />
+                <RaisedButton label="Guardar" primary={true} style={style} />
             </div>
         );
     }

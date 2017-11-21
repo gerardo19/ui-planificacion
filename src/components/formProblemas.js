@@ -3,11 +3,16 @@ import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import TextField from 'material-ui/TextField';
 import DatePicker from 'material-ui/DatePicker';
+import RaisedButton from 'material-ui/RaisedButton';
 
 const styles = {
   customWidth: {
     width: 200,
   },
+};
+
+const styleButton = {
+  margin: 12,
 };
 
 export default class FormProblemas extends Component {
@@ -81,6 +86,7 @@ export default class FormProblemas extends Component {
             />
           </div>
         </form> 
+        <RaisedButton label="Guardar" primary={true} style={styleButton} />
       </div>
     )
   }

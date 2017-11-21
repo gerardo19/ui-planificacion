@@ -8,7 +8,7 @@ export default class Incidentes extends Component {
         return (
             <div>
                 <div className="side">
-                    <ListView />
+                    <ListView title="Lista de Incidentes" />
                 </div>
                 <div className="side">
                     <FormIncidentes />

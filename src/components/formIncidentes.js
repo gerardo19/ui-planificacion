@@ -120,7 +120,7 @@ export default class FormIncidentes extends Component {
                         />
                     </div>
                 </form>
-                <RaisedButton label="Primary" primary={true} style={styleButton} />
+                <RaisedButton label="Guardar" primary={true} style={styleButton} />
             </div>
         )
     }

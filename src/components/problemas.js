@@ -8,7 +8,7 @@ export default class Problemas extends React.Component {
     return (
       <div>
         <div className="side">
-          <ListView />
+          <ListView title="Lista de Problemas"/>
         </div>
         <div className="side">
           <FormProblemas />
